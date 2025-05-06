@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Desk = ({ checkin, flightSchedule }) => {
+const Desk = ({ checkin }) => {
     useEffect(() => {
         // we gonna need to keep track of the flight schedule
         // lets get the schedule data every 5 minutes
