@@ -28,7 +28,7 @@ export function AirPort(props) {
     const [passengerCount, setPassengerCount] = useState(0);
 
 
-    function checkInToFlight() {
+    function checkin() {
         console.log("Checking the passenger in to the flight"); 
         // fetch checkin service. service is very slow, and has security mechanism against DDOS
         // so if this function is called too many times, it will be blocked
@@ -37,7 +37,7 @@ export function AirPort(props) {
 
     return (
         <>
-            <Desk checkin={checkInToFlight} />
+            <Desk checkin={checkin} />
             <button onClick={() => setPassengerCount((count) => count + 1)}>
                 Passenger Arrived: {passengerCount} total guests
             </button>
